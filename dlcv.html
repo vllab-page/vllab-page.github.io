@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+	<head>
+		<title>DLCV - VISION & LEARNING LAB</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="https://cdn11.editmysite.com/css/sites.css?buildtime=1234" />
+<link rel="stylesheet" type="text/css" href="https://cdn11.editmysite.com/css/old/fancybox.css?buildtime=1234" />
+<link rel="stylesheet" type="text/css" href="https://cdn11.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1783330461" title="wsite-theme-css" />
+<link href='https://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+
+<link href='https://cdn2.editmysite.com/fonts/Playfair_Display/font.css?2' rel='stylesheet' type='text/css' />
+<link href='https://cdn2.editmysite.com/fonts/Montserrat/font.css?2' rel='stylesheet' type='text/css' />
+<link href='https://cdn2.editmysite.com/fonts/Playfair_Display/font.css?2' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Arial" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#0e4361 !important;}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Playfair Display" !important;font-weight:400 !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#1b597c !important;}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-family:"Montserrat" !important;font-weight:700 !important;letter-spacing: -3px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-family:"Playfair Display" !important;font-weight:400 !important;letter-spacing: 0px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:37px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-size:90px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-size:22px !important;line-height:34px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script src='files/templateArtifacts.js?1781712580'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn11.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://cdn11.editmysite.com/js/jquery-1.8.3.min.js'></script>
+
+<script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/zh_TW/stl.js?buildTime=1234&"></script>
+<script src="https://cdn11.editmysite.com/js/site/main.js?buildtime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "TW";
+			_W.storeCurrency = "TWD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "537079929586264354";
+			com_userID = "111696467";</script><script type="text/javascript">_W.configDomain = "";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="https://cdn2.editmysite.com/js/lang/zh_TW/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"190556212135489198","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"718609608747366152","title":"About","url":"about.html","target":"","nav_menu":false,"nonclickable":false},{"id":"463173705756809980","title":"Members","url":"members.html","target":"","nav_menu":false,"nonclickable":true},{"id":"628400461411064669","title":"Publications","url":"publications.html","target":"","nav_menu":false,"nonclickable":false}],
+			"347519112826367144",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="header-page  wsite-page-dlcv  full-width-body-off header-overlay-off alt-nav-off  wsite-theme-light"><div class="wrapper">
+    <div class="birdseye-header">
+      <div class="nav-wrap">
+        <div class="container">
+          <div class="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">VISION & LEARNING LAB</span>
+	
+	</a>
+
+</span></div>
+          <div class="nav desktop-nav"><ul class="wsite-menu-default">
+		<li id="pg190556212135489198" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg718609608747366152" class="wsite-menu-item-wrap">
+			<a
+						href="about.html"
+				class="wsite-menu-item"
+				>
+				About
+			</a>
+			
+		</li>
+		<li id="pg463173705756809980" class="wsite-menu-item-wrap">
+			<a
+						
+				class="wsite-menu-item"
+				>
+				Members
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-921523116559644476"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="ycwang.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Director
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-117533466565033651"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="students.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Students
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-481126317129258051"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="assistants.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Assistants
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg628400461411064669" class="wsite-menu-item-wrap">
+			<a
+						href="publications.html"
+				class="wsite-menu-item"
+				>
+				Publications
+			</a>
+
+		</li>
+</ul>
+</div>
+          <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-wrap">
+      <div class="wsite-elements wsite-not-footer wsite-header-elements">
+	<div class="wsite-section-wrap">
+	<div  class="wsite-section wsite-header-section wsite-section-bg-image wsite-section-effect-parallax" style="background-image: url(&quot;uploads/1/1/1/6/111696467/background-images/background-images/1814833890.jpg&quot;) ;background-repeat: no-repeat ;background-position: NaN% NaN% ;background-size: 100% ;background-color: transparent ;background-size: cover;background-attachment: fixed;" >
+		<div class="wsite-section-content">
+			
+          <div class="container">
+            <div class="banner">
+				<div class="wsite-section-elements">
+					<h2 class="wsite-content-title"><font size="7">Deep Learning for Computer Vision 2025</font><br /><font size="6">114 - 1&nbsp; /&nbsp; Fall&nbsp; 2025, National Taiwan University</font><br></h2>
+				</div>
+			</div>
+          </div>
+      
+		</div>
+		<div class=""></div>
+	</div>
+</div>
+
+</div>
+
+    </div>
+
+    <div class="main-wrap">
+      <div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-23"  >
+		<div class="wsite-section-content">
+          <div class="container">
+			<div class="wsite-section-elements">
+				<h2 class="wsite-content-title"><strong>News</strong></h2>
+
+<div class="paragraph"><font size="4"><strong style="color:rgb(14, 67, 97)">2025/09/05: </strong>Registration code has been sent to the waitlist student who are approved. If you prefer to audit the class, please contact TA.<br /><strong style="color:rgb(14, 67, 97)">2025/08/22: </strong>If you are NTU students and would like to register the class, please come to the class and add yourself to the waitlist on Sept. 3rd. The waitlist link will be provided then.</font><br></div>
+
+<h2 class="wsite-content-title"><strong>Introduction</strong></h2>
+
+<div class="paragraph">This course examines the transformative impact of deep learning in computer vision. Students will establish a solid foundation while engaging with state-of-the-art techniques, ranging from convolutional neural networks (CNNs), Transformers, diffusion models, and 3D vision to multimodal large language models (MLLMs). The course emphasizes the design of model architectures, training methodologies, and real-world applications. Through hands-on projects and critical theoretical discussions, students will develop comprehensive expertise in designing, training, and optimizing deep learning models for complex visual tasks. Ultimately, the course prepares students for advanced research and professional careers in the rapidly evolving field of computer vision.<br></div>
+
+<h2 class="wsite-content-title"><strong>Goals</strong></h2>
+
+<div class="paragraph">This course introduces students to cutting-edge research, beginning with the fundamentals of deep learning and extending to its latest advances in vision applications. Students are expected to master key concepts such as neural network architectures, training methodologies, and performance optimization strategies. A central component of the course is the final project, designed to foster critical thinking and problem-solving skills, while preparing students to contribute to frontier research or address real-world challenges. Active participation, completion of hands-on projects, and engagement in theoretical discussions will be essential for success in this course.<br></div>
+
+<h2 class="wsite-content-title"><strong>Syllabus&nbsp;</strong></h2>
+
+<div id="277512336571986953"><div><style type="text/css">
+	#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table-wrapper {
+  padding: 20px 0;
+}
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table {
+  width: 100%;
+  border: 1px solid #d5d5d5;
+  border-spacing: 0;
+}
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table td.cell {
+  border-right: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  word-break: break-word;
+  background-color: #FFFFFF;
+  width: 20%;
+}
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table td.cell .paragraph {
+  width: 90%;
+  margin: 0 5%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table.style-top tr:first-child td,
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table.style-side td:first-of-type {
+  background-color: #F8F8F8;
+}
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table.style-top tr:first-child td .paragraph,
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table.style-side td:first-of-type .paragraph {
+  font-weight: 700;
+}
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table tr:last-child td {
+  border-bottom: none;
+}
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table td:last-of-type {
+  border-right: none;
+}
+#element-3186481f-9e75-4878-80c8-a4c05636ade1 .simple-table .empty-content-area-element {
+  padding-left: 0px !important;
+}
+
+</style><div id="element-3186481f-9e75-4878-80c8-a4c05636ade1" data-platform-element-id="702688850553606843-1.4.3" class="platform-element-contents">
+	<div class="simple-table-wrapper">
+  <table class="simple-table style-top">
+      <tr>
+          <td class="cell"><div class="paragraph">Week</div></td>
+          <td class="cell"><div class="paragraph">Date</div></td>
+          <td class="cell"><div class="paragraph">Topic</div></td>
+          <td class="cell"><div class="paragraph">Course Materials</div></td>
+          <td class="cell"><div class="paragraph">Remarks</div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph" style="text-align:center;">1</div></td>
+          <td class="cell"><div class="paragraph">09/03<br></div></td>
+          <td class="cell"><div class="paragraph"><span style="color:rgb(51, 51, 51)">Course Logistics; Intro to Neural Nets</span><br></div></td>
+          <td class="cell"><div class="paragraph"><a href="uploads/1/1/1/6/111696467/dlcv_w0-course-info.pdf">Course-Info</a><br /><a href="uploads/1/1/1/6/111696467/dlcv_w0__course_info__modified.pdf">Week-1</a></div></td>
+          <td class="cell"><div class="paragraph"><font color="#2e5c6e">&nbsp;</font></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">2</div></td>
+          <td class="cell"><div class="paragraph">09/10<br></div></td>
+          <td class="cell"><div class="paragraph"><span style="color:rgb(51, 51, 51)">Convolutional Neural Networks &amp; Self-Supervised Learning</span></div></td>
+          <td class="cell"><div class="paragraph"><a href="uploads/1/1/1/6/111696467/dlcv_w2__1_.pdf">Week-2</a></div></td>
+          <td class="cell"><div class="paragraph"><strong><font color="#2e5c6e">HW #1 out </font></strong><br></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">3</div></td>
+          <td class="cell"><div class="paragraph">09/17<br></div></td>
+          <td class="cell"><div class="paragraph">Image Segmentation &amp; Object Detection</div></td>
+          <td class="cell"><div class="paragraph"><a href="uploads/1/1/1/6/111696467/dlcv_w3.pdf">Week-3</a></div></td>
+          <td class="cell"><div class="paragraph">&nbsp;</div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">4</div></td>
+          <td class="cell"><div class="paragraph">09/24<br></div></td>
+          <td class="cell"><div class="paragraph"><font color="#2a2a2a">Generative Models (I) - AE, VAE, &amp; Diffusion Model (I)</font></div></td>
+          <td class="cell"><div class="paragraph"><a href="uploads/1/1/1/6/111696467/dlcv_w4.pdf">Week-4</a>&nbsp;</div></td>
+          <td class="cell"><div class="paragraph"><strong><span style="color:rgb(14, 67, 97)">HW #1 due</span></strong></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">5</div></td>
+          <td class="cell"><div class="paragraph"><span style="color:rgb(14, 67, 97)">10/01</span><br></div></td>
+          <td class="cell"><div class="paragraph" style="text-align:center;"><span style="color:rgb(51, 51, 51)">Generative Models (II) - Diffusion Model (II), GAN</span></div></td>
+          <td class="cell"><div class="paragraph"><a href="uploads/1/1/1/6/111696467/dlcv_w5.pdf">Week-5</a></div></td>
+          <td class="cell"><div class="paragraph"><strong>HW #2 out</strong><br></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">6</div></td>
+          <td class="cell"><div class="paragraph"><span style="color:rgb(14, 67, 97)">10/8</span><br></div></td>
+          <td class="cell"><div class="paragraph">Recurrent Neural Networks &amp; Transformer (I)</div></td>
+          <td class="cell"><div class="paragraph"><a href="uploads/1/1/1/6/111696467/dlcv_w6.pdf">Week-6</a></div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">7</div></td>
+          <td class="cell"><div class="paragraph"><span style="color:rgb(14, 67, 97)">10/15</span><br></div></td>
+          <td class="cell"><div class="paragraph">Transformer (II); Vision &amp; Language Models</div></td>
+          <td class="cell"><div class="paragraph"><a href="uploads/1/1/1/6/111696467/dlcv_w7.pdf">Week-7</a></div></td>
+          <td class="cell"><div class="paragraph">&nbsp;</div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">8</div></td>
+          <td class="cell"><div class="paragraph">10/22<br></div></td>
+          <td class="cell"><div class="paragraph"><span style="color:rgb(14, 67, 97)">ICCV week</span><br /></div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+          <td class="cell"><div class="paragraph"><strong>HW #2 due</strong><strong style="color:rgb(14, 67, 97)"><br />HW #3 out</strong></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">9</div></td>
+          <td class="cell"><div class="paragraph">10/29<br></div></td>
+          <td class="cell"><div class="paragraph"><strong style="color:rgb(14, 67, 97)"><span style="color:rgb(51, 51, 51)">Guest Lecture: </span></strong>Vision Language Action Models &amp; Reasoning<br />by Dr. Fu-En Yang, NVIDIA<br></div></td>
+          <td class="cell"><div class="paragraph">&nbsp;</div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">10</div></td>
+          <td class="cell"><div class="paragraph">11/05<br></div></td>
+          <td class="cell"><div class="paragraph"><strong style="color:rgb(14, 67, 97)"><span style="color:rgb(51, 51, 51)">Guest Lecture: </span></strong>Toward Efficient LLM Inference<br />by Prof. Kai-Chiang Wu, NYCU<br /><strong>Project Sponsor Introduction:</strong> PicCollage<br></div></td>
+          <td class="cell"><div class="paragraph">&#8203;<br></div></td>
+          <td class="cell"><div class="paragraph">&nbsp;</div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">11</div></td>
+          <td class="cell"><div class="paragraph">11/12<br></div></td>
+          <td class="cell"><div class="paragraph"><strong style="color:rgb(14, 67, 97)"><span style="color:rgb(51, 51, 51)">Guest Lecture: </span></strong>3D Vision<br />by Dr. Sheng-Yu Huang, NTU/NVIDIA</div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+          <td class="cell"><div class="paragraph"><strong style="color:rgb(14, 67, 97)">HW #3 due</strong><strong><br />&#8203;&nbsp;HW #4 out</strong>&nbsp;</div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">12</div></td>
+          <td class="cell"><div class="paragraph">11/19<br></div></td>
+          <td class="cell"><div class="paragraph"><strong style="color:rgb(14, 67, 97)"><span style="color:rgb(51, 51, 51)">Guest Lecture: </span></strong>Linda Huang, Senior Dir., GeValyn Associates<br></div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">13</div></td>
+          <td class="cell"><div class="paragraph">11/26<br></div></td>
+          <td class="cell"><div class="paragraph"><span style="color:rgb(51, 51, 51)">PEFT &amp; Hallucination;<br /><strong>Guest Talk</strong>: Dr. Trista Chen, Microsoft</span><br></div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+          <td class="cell"><div class="paragraph"><span style="color:rgb(14, 67, 97)">&#8203;</span>Final Project Announcement<br></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">14</div></td>
+          <td class="cell"><div class="paragraph">12/03<br></div></td>
+          <td class="cell"><div class="paragraph">No class;<br />Final Project Progress Check</div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+          <td class="cell"><div class="paragraph"><strong>HW #4 due</strong>; NeurIPS week</div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">15</div></td>
+          <td class="cell"><div class="paragraph">12/10<br></div></td>
+          <td class="cell"><div class="paragraph">Advanced topics in Foundation &amp; World Models; ASM</div></td>
+          <td class="cell"><div class="paragraph">&nbsp;</div></td>
+          <td class="cell"><div class="paragraph"><br></div></td>
+      </tr>
+      <tr>
+          <td class="cell"><div class="paragraph">16</div></td>
+          <td class="cell"><div class="paragraph">12/22 Mon</div></td>
+          <td class="cell"><div class="paragraph"><strong>Final Project Presentation</strong><br /></div></td>
+          <td class="cell"><div class="paragraph">&nbsp;</div></td>
+          <td class="cell"><div class="paragraph">Sponsor: PicCollage&nbsp;<br></div></td>
+      </tr>
+  </table>
+</div>
+</div>
+<div style="clear:both;"></div><script type="text/javascript" class="element-script">function setupElement277512336571986953() {
+	var requireFunc = window.platformElementRequire || window.require;
+
+	// Relies on a global require, specific to platform elements
+	requireFunc([
+		'w-global',
+		'underscore',
+		'jquery',
+		'backbone',
+		'util/platform/elements/PlatformElement',
+		'util/platform/elements/PlatformElementSettings'
+	], function(
+		_W,
+		_,
+		$,
+		Backbone,
+		PlatformElement,
+		PlatformElementSettings
+	) {
+		var dependencies = null || [];
+		var platform_element_id = "702688850553606843-1.4.3";
+
+		if (typeof _W.loadedPlatformDependencies === 'undefined') {
+			_W.loadedPlatformDependencies = [];
+		}
+
+		if (typeof _W.platformElements === 'undefined') {
+			_W.platformElements = [];
+		}
+
+		if (typeof _W.platformElements[platform_element_id] === 'undefined') {
+			_W.platformElements[platform_element_id] = {};
+			_W.platformElements[platform_element_id].deferredObject = new $.Deferred();
+			_W.platformElements[platform_element_id].deferredPromise = _W.platformElements[platform_element_id].deferredObject.promise();
+		}
+
+		if(_.intersection(_W.loadedPlatformDependencies, dependencies).length !== dependencies.length){
+			_.reduce(dependencies, function(promise, nextScript){
+				_W.loadedPlatformDependencies.push(nextScript);
+				return promise.then(function(){
+					return $.getScript(nextScript);
+				});
+			}, $().promise()).then(function(){
+				_W.platformElements[platform_element_id].deferredObject.resolve();
+			});
+		}
+
+		if (dependencies.length === 0){
+			_W.platformElements[platform_element_id].deferredObject.resolve();
+		}
+
+		_W.platformElements[platform_element_id].deferredPromise.done(function(){
+			var _ElementDefinition = /**
+ * This is required for element rendering to be possible
+ * @type {PlatformElement}
+ */
+(function() {
+    var SimpleTable = PlatformElement.extend({
+        initialize: function() {
+            this.setSizes();
+        },
+
+        setSizes: function() {
+            var sizes = this.settings.get('tableSizes');
+            // if the # of columns isn't the size of the array of lengths, ignore it.
+            if (sizes && sizes != "default" && this.settings.get('columns') == sizes.length) {
+                var columns = this.$('tr').each(function(index, value) {
+                    var cells = $(value).find('td').each(function(index2, value2) {
+                        $(value2).css('width', sizes[index2] + '%');   
+                    });
+                });
+            }
+        }
+    });
+
+    return SimpleTable;
+})();;
+
+			if (typeof _ElementDefinition == 'undefined' || typeof _ElementDefinition == 'null') {
+				var _ElementDefinition = PlatformElement.extend({});
+			}
+
+			var _Element = _ElementDefinition.extend({
+				initialize: function() {
+					// we still want to call the initialize function defined by the developer
+					// however, we don't want to call it until placeholders have been replaced
+					this.placeholderInterval = setInterval(function() {
+						// so use setInterval to check for placeholders.
+						if (this.$('.platform-element-child-placeholder').length == 0) {
+							clearInterval(this.placeholderInterval);
+							this.constructor.__super__.initialize.apply(this);
+						}
+					}.bind(this), 100);
+				}
+			});
+
+			_Element.prototype.settings = new PlatformElementSettings({"columns_each":[{"columns_index":0},{"columns_index":1},{"columns_index":2},{"columns_index":3},{"columns_index":4}],"rows_each":[{"rows_index":0},{"rows_index":1},{"rows_index":2},{"rows_index":3},{"rows_index":4},{"rows_index":5},{"rows_index":6},{"rows_index":7},{"rows_index":8},{"rows_index":9},{"rows_index":10},{"rows_index":11},{"rows_index":12},{"rows_index":13},{"rows_index":14},{"rows_index":15},{"rows_index":16}],"columns":5,"rows":17,"style":"top","alignment":"center","titleColor":"#F8F8F8","backgroundColor":"#FFFFFF","borderColor":"#d5d5d5","tableSizes":[6,8,52,10,23]});
+			_Element.prototype.settings.page_element_id = "277512336571986953";
+
+			_Element.prototype.element_id = "3186481f-9e75-4878-80c8-a4c05636ade1";
+			_Element.prototype.user_id = "111696467";
+			_Element.prototype.site_id = "537079929586264354";
+			_Element.prototype.assets_path = "//marketplace.editmysite.com/uploads/b/marketplace-elements-702688850553606843-1.4.3/assets/";
+			new _Element({
+				el: '#element-3186481f-9e75-4878-80c8-a4c05636ade1'
+			});
+		});
+	});
+
+}
+
+if (typeof document.documentElement.appReady == 'undefined') {
+	document.documentElement.appReady = 0;
+}
+
+if (document.documentElement.appReady || (window.inEditor && window.inEditor())) {
+	setupElement277512336571986953();
+} else if (document.createEvent && document.addEventListener) {
+	document.addEventListener('appReady', setupElement277512336571986953, false);
+} else {
+	document.documentElement.attachEvent('onpropertychange', function(event){
+		if (event.propertyName == 'appReady') {
+			setupElement277512336571986953();
+		}
+	});
+}
+
+</script></div></div>
+
+<h2 class="wsite-content-title"><strong>Contacts</strong></h2>
+
+<div class="paragraph" style="text-align:left;"><font color="#2a2a2a" size="4">Prof. Yu-Chiang Frank Wang:&nbsp; &nbsp;<a href="mailto:ycwang@ntu.edu.tw">ycwang@ntu.edu.tw</a><br />TA mail:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="mailto:ntu-dlcv-2025-fall-ta@googlegroups.com">ntu-dlcv-2025-fall-ta@googlegroups.com</a></font></div>
+
+<h2 class="wsite-content-title" style="text-align:left;"><strong>Teaching Assistants</strong></h2>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/362908346_orig.png" alt="圖片" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/bingyi_orig.png" alt="圖片" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/kenneth_orig.png" alt="圖片" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong style="color:rgb(14, 67, 97)"><font size="5">Hsi-Che Lin</font></strong><br />MK-514<br />TA Hours: Wed. 16:30 ~ 17:20</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><font size="5"><strong>Bing-Yi Yang</strong></font><br />MK-514<br /><span style="color:rgb(14, 67, 97)">TA Hours: Mon. </span>16:30 ~ 17:20&#8203;</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><font size="5"><strong>Kenneth Yang</strong></font><br />MK-514<br /><span style="color:rgb(14, 67, 97)">TA Hours:&nbsp;Mon. </span>16:30 ~ 17:20&#8203;</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/431448526_orig.png" alt="圖片" style="width:196;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/1_orig.png" alt="圖片" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/2_orig.png" alt="圖片" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong style="color:rgb(14, 67, 97)"><font size="5">Hung-Kai Chung</font></strong><br />MK-514<br /><span style="color:rgb(14, 67, 97)">TA Hours: Fri. </span>16:30 ~ 17:20&#8203;</div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/3_orig.png" alt="圖片" style="width:198;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong><font size="5">Kuei-Chun Wang</font></strong><br />MK-514<br /><span style="color:rgb(14, 67, 97)">TA Hours: Wed. </span>16:30 ~ 17:20&#8203;</div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/4_orig.png" alt="圖片" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong><font size="5">Yu-Yang Sheng</font></strong><br />MK-514<br /><span style="color:rgb(14, 67, 97)">TA Hours: Fri. </span>16:30 ~ 17:20&#8203;</div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/5_orig.png" alt="圖片" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><font size="5"><strong>Chang-Hsun Wu</strong></font><br />MK-514<br />TA Hours: <span style="color:rgb(14, 67, 97)">Thu. </span>16:30 ~ 17:20&#8203;</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong><font size="5">Kuan-Yi Lee</font></strong><br /><font size="3">MK-514<br />&#8203;TA Hours: </font><span style="color:rgb(14, 67, 97)">Tue. </span>16:30 ~ 17:20&#8203;</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong><font size="5">Ching-Yu Hsu</font></strong><br />MK-514<br />&#8203;TA Hours: <span style="color:rgb(14, 67, 97)">Tue. </span>16:30 ~ 17:20&#8203;<span style="color:rgb(14, 67, 97)"></span></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/6_orig.png" alt="圖片" style="width:196;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/7_orig.png" alt="圖片" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/1/1/6/111696467/11zon-cropped_orig.png?1756344427" alt="圖片" style="width:194;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><font size="5"><strong>Ting-Hsun Chi</strong></font><br /><font size="3">MK-514</font><br /><font size="3">TA Hours: </font><span style="color:rgb(14, 67, 97)">Tue. </span>16:30 ~ 17:20&#8203;</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong><font size="5">Chi-Tun Hsu</font></strong><br /><font size="3">MK-514</font><br />TA Hours: <span style="color:rgb(14, 67, 97)">Mon. </span>16:30 ~ 17:20&#8203;</div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:33.333333333333%; padding:0 15px;">
+					
+						
+
+<div class="paragraph" style="text-align:center;"><strong style="color:rgb(14, 67, 97)"><font size="5">Han-Jun Ko</font></strong><br /><font style="color:rgb(14, 67, 97)">MK-514</font><br /><span style="color:rgb(14, 67, 97)">TA Hours:&nbsp;</span><span style="color:rgb(14, 67, 97)">Thu. </span>16:30 ~ 17:20&#8203;</div>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+			</div>
+		</div>
+      </div>
+
+	</div>
+</div>
+
+</div>
+
+    </div>
+
+    <div class="footer-wrap">
+        <div class="footer"><div class='wsite-elements wsite-footer'>
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:17.460111065962%; padding:0 15px;">
+					
+						
+
+<div class="wsite-spacer" style="height:50px;"></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:38.308004876067%; padding:0 15px;">
+					
+						
+
+<div class="wsite-map"><iframe allowtransparency="true" frameborder="0" scrolling="no" style="width: 100%; height: 250px; margin-top: 10px; margin-bottom: 10px;" src="https://maps.google.com/maps?q=25.019569232486557,121.54354650842963&z=15&output=embed"></iframe></div>
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:44.231884057971%; padding:0 15px;">
+					
+						
+
+<h2 class="wsite-content-title" style="text-align:left;"><br /><font size="4">&#8203;</font><span style="color:rgb(14, 67, 97)">&#23416;&#26032;&#39208; 514 &#23460; (MK 514) @ NTU</span><br /><br /><font size="4">Contact Us</font><br /><font size="2"><strong>Tel: 02-33663241</strong></font><br /><font size="2"><strong>&#8203;Admin. Assistant:&nbsp;<font color="#24678d">Fang-Ru Shih</font>&nbsp;(frs106 AT ntu.edu.tw)</strong><br />Web Admin. :&nbsp;<font color="#24678d">Kai-Chen Yang</font>&nbsp;(d14942011 AT ntu.edu.tw)<br />Web Photo Credit:&nbsp;<font color="#24678d">Yuan-Fang Lin</font>&nbsp;(<font color="#2a2a2a">b02901003 AT ntu.edu.tw</font>)</font><br /><br /><font size="1">&#8203;</font></h2>
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div></div></div>
+    </div><!-- end footer-wrap -->
+  </div><!-- /.wrapper -->
+
+  <div id="navMobile" class="nav mobile-nav">
+    <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
+    <ul class="wsite-menu-default">
+    		<li id="pg190556212135489198" class="wsite-menu-item-wrap">
+    			<a
+    						href="index.html"
+    				class="wsite-menu-item"
+    				>
+    				Home
+    			</a>
+    			
+    		</li>
+    		<li id="pg718609608747366152" class="wsite-menu-item-wrap">
+    			<a
+    						href="about.html"
+    				class="wsite-menu-item"
+    				>
+    				About
+    			</a>
+    			
+    		</li>
+    		<li id="pg463173705756809980" class="wsite-menu-item-wrap">
+    			<a
+    						
+    				class="wsite-menu-item"
+    				>
+    				Members
+    			</a>
+    			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-921523116559644476"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="ycwang.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Director
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-117533466565033651"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="students.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Students
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-481126317129258051"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="assistants.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Assistants
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+    		</li>
+    		<li id="pg628400461411064669" class="wsite-menu-item-wrap">
+    			<a
+    						href="publications.html"
+    				class="wsite-menu-item"
+    				>
+    				Publications
+    			</a>
+
+    		</li>
+    </ul>
+  </div>
+
+	<script type="text/javascript" src="files/theme/files/plugins.js"></script>
+  <script type="text/javascript" src="files/theme/files/custom.js"></script>
+    <div id="customer-accounts-app"></div>
+    <script src="https://cdn11.editmysite.com/js/site/main-customer-accounts-site.js?buildtime=1234"></script>
+
+		
+	</body>
+</html>
